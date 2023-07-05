@@ -1,0 +1,25 @@
+name: ArmorTrimEdit
+version: '${project.version}'
+author: SM45654
+main: at.sm45654.armortrimedit.ArmorTrimEdit
+api-version: '1.20'
+
+commands:
+  armortrimedit:
+    aliases:
+      - armortrim
+      - ae
+
+permissions:
+  armortrimedit.add:
+    default: op
+  armortrimedit.remove:
+    default: op
+  armortrimedit.edit:
+    default: op
+    children:
+      - armortrimedit.add
+      - armortrimedit.remove
+
+
+
